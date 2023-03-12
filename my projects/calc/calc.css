@@ -1,25 +1,37 @@
 *{
 	box-sizing: border-box;
 }
+
+body {
+	background: rgb(223, 222, 210);
+}
+
 .content {
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
+	
 }
 
 .calc {
 	display: flex;
 	flex-direction: column;
-	
+	justify-content: center;
+	align-items: center;
 	background-color: rgb(225, 222, 222);
 	width: 300px;
 	height: 500px;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.286);
+	box-shadow: 1px 1px 4px #21201e;
 }
 .display {
-	background-color: rgb(124, 124, 202);
-	width: 97%;
+	background-color: rgb(63, 156, 232);
+	width: 96%;
 	height: 30%;
-	border-radius: 3px;
-	margin: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.286);
+	border-radius: 5px;
+	margin: 6px;
 }
 .board-keys {
 	display: flex;
@@ -39,15 +51,57 @@
 	margin: 3px;
 	border-radius: 10px;
 	cursor: pointer;
+	box-shadow: 1px 1px 2px #21201e;
+	background-color: #ccc;
+  color: #333;
+	font-weight: 600;
+}
+.key-0,.key-1,.key-2,.key-3,
+.key-4,.key-5,.key-6,.key-7,
+.key-8,.key-9,.key-c {
+	font-weight: 200;
 }
 
-.key:hover{
-	transform: scale(1.1);
+
+
+.key:hover {
+	background-color: #999;
+  color: #fff;
+}
+
+.key-b {
+	background-image: url("/my projects/calc/backspace.png");
+	background-repeat: no-repeat;
+  background-size: contain;
+	background-position-x: center;
+}
+
+.key-b:hover {
+	background-image: url("/my projects/calc/backspaceW.png");
+}
+
+
+.key:active {
+  transform: translateY(1px);
+	box-shadow: none;
 }
 
 .input {
+	display: flex;
+	font-size: 25px;
 	width: 100%;
+	height: 50px;
+	border: 1px solid gray;
+	margin: 3px;
+	border-radius: 10px;
+	
 }
+
+.input:focus {
+	outline: 1px solid rgb(66, 134, 176);
+}
+
+
 .key-0 {
 	width: 47%;
 }

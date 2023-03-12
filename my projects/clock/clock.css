@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(223, 222, 210);
+	display: flex;
+	justify-content: center;
+}
+
+.clock {
+	position: relative;
+
+	height: 553px;
+	width: 553px;
+	background-image: url("/my projects/clock/background-clock.png");
+	margin-top: 50px;
+	border-radius: 50%;
+}
+
+.hand {
+	position: absolute;
+  top: 50%;
+	background-color: black;
+	transform-origin: top;
+	
+}
+
+.second {
+	left: 276px;
+	height: 200px;
+	width: 2px;
+	background-color: red;
+	border-radius: 2px;
+	animation-name: time;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+.minute {
+	left: 275px;
+	height: 150px;
+	width: 4px;
+	border-radius: 4px;
+	animation-name: time;
+	animation-duration: 60s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+.hour {
+	left: 274px;
+	height: 110px;
+	width: 6px;
+	border-radius: 6px;
+	animation-name: time;
+	/* 1440 correct count */
+	animation-duration: 600s;
+	/* ------------------ */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+/* 
+.clock:hover .hand {
+	transform: rotate(360deg);
+}
+ */
+@keyframes time{
+	from{
+		rotate: -180deg;
+	}
+
+	25% {
+		rotate: -90deg;
+	}
+
+	50% {
+		rotate: 0deg;
+	}
+
+	75% {
+		rotate: 90deg;
+	}
+
+	to {
+		rotate: 180deg;
+	}
+}
