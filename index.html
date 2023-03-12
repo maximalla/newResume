@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resume</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="/css/styles.css">
+	
 </head>
 <body>
 	<div class="header">
@@ -20,11 +22,11 @@
 			</div>
 			<div class="links">
 				<img src="/images/links.png" alt="links" width="16px" height="16px" >
-				<p>my links<!-- посилання на github з моїми лінками --></p>
+				<p><a href="/links.html">my links</a></p>
 			</div>
 			<div class="location">
 				<img src="/images/location.png" alt="location" width="16px" >
-				<p>Mizhhiria, Ukraine</p>
+				<p><a href="https://goo.gl/maps/CV3rhgDtrLF9rDB96">Mizhhiria, Ukraine</a></p>
 			</div>
 		</div>
 	</div>
@@ -32,7 +34,7 @@
 
 
 	<div class="content">
-		<div class="column">
+		<div class="column column-left" id="firstColumn">
 			<div class="summary">
 				<div class="content-head">SUMMARY</div>
 				<div class="block">I am responsible, I perform work according to the technical task, I find solutions to difficult problems</div>
@@ -116,7 +118,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="column">
+
+
+		<div class="column column-right">
 			<div class="skills">
 				<div class="content-head">SKILLS</div>
 				<div class="block">
@@ -168,12 +172,36 @@
 				<div class="block">If I don't know the answer, I'll say so. But rest assured, I will know where to find the answer and I will find it.</div>
 			</div>
 
-			<div class="passions">
-				<div class="content-head">PASSIONS</div>
-				<div class="block"></div>
+			<div class="my_projects">
+				<span class="time">
+					<a href="/my projects/clock/clock.html">
+						<img src="/images/clock.png" alt="clock" width="100px">
+					</a>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis incidunt modi ipsum laudantium quisquam explicabo aliquam commodi. Ad soluta aperiam non. Nulla, minima. Delectus aperiam nisi quos porro ab.</p>
+				</span>
+				<span class="etime">
+					<a href="/my projects/eclock/eclock.html">
+						<img src="/images/digital-clock.png" alt="eclock" width="100px">
+					</a>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis incidunt modi ipsum laudantium quisquam explicabo aliquam commodi. Ad soluta aperiam non. Nulla, minima. Delectus aperiam nisi quos porro ab.</p>
+				</span>
+				<span class="calc">
+					<a href="/my projects/calc/calc.html">
+						<img src="/images/calculate.png" alt="calculate" width="100px">
+					</a>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis incidunt modi ipsum laudantium quisquam explicabo aliquam commodi. Ad soluta aperiam non. Nulla, minima. Delectus aperiam nisi quos porro ab.</p>
+				</span>
+				<span class="movie">
+					<a href="/my projects/movies/movies.html">
+						<img src="/images/web-browser.png" alt="movie site" width="100px">
+					</a>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis incidunt modi ipsum laudantium quisquam explicabo aliquam commodi. Ad soluta aperiam non. Nulla, minima. Delectus aperiam nisi quos porro ab.</p>
+				</span>
 			</div>
+
+
+
 		</div>
-		
 	</div>
 </body>
 </html>

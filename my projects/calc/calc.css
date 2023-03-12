@@ -1,0 +1,54 @@
+*{
+	box-sizing: border-box;
+}
+.content {
+	display: flex;
+	justify-content: center;
+}
+
+.calc {
+	display: flex;
+	flex-direction: column;
+	
+	background-color: rgb(225, 222, 222);
+	width: 300px;
+	height: 500px;
+}
+.display {
+	background-color: rgb(124, 124, 202);
+	width: 97%;
+	height: 30%;
+	border-radius: 3px;
+	margin: 3px;
+}
+.board-keys {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	margin: 3px;
+}
+
+.key {
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22%;
+	height: 50px;
+	border: 1px solid gray;
+	margin: 3px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.key:hover{
+	transform: scale(1.1);
+}
+
+.input {
+	width: 100%;
+}
+.key-0 {
+	width: 47%;
+}
+
