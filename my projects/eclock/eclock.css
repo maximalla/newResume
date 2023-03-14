@@ -1,0 +1,109 @@
+* {
+	
+}
+
+body {
+	background: rgb(223, 222, 210);
+}
+
+.content {
+	margin: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.eclock {
+	display: flex;
+	
+}
+.time {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.time-spacing0 {
+	width: calc(200px/5);
+	height: calc(1400px/5);
+	background-image: url("/my projects/eclock/time-space0.png");
+	background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.time-spacing1 {
+	width: 100%;
+	height: 100%;
+	background-image: url("/my projects/eclock/time-space.png");
+	background-repeat: no-repeat;
+  background-size: contain;
+
+
+
+	animation: sec1 2s steps(1,start) 1s infinite;
+}
+
+.digit {
+	position: relative;
+	width: calc(800px/5);
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url("/my projects/eclock/inactive-digit.png");
+	background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.x {
+	position: absolute;
+	left: calc(100px/5);
+	width: calc(600px/5);
+	height: calc(200px/5);
+	background-image: url("/my projects/eclock/blockXb1pxblack.png");
+	background-repeat: no-repeat;
+  background-size: contain;
+
+	animation: sec1 2s steps(1,start) infinite;
+}
+
+.y {
+	position: absolute;
+	width: calc(200px/5);
+	height: calc(600px/5);
+	background-image: url("/my projects/eclock/blockYb1pxblack.png");
+	background-repeat: no-repeat;
+  background-size: contain;
+
+	animation: sec1 2s steps(1,start) infinite;
+}
+
+.block-0 {
+	
+}
+.block-1 {
+	top: calc(100px/5);
+}
+.block-2 {
+	top: calc(100px/5);
+	left: calc(600px/5);
+}
+.block-3 {
+	top: calc(600px/5);
+}
+.block-4 {
+	top: calc(700px/5);
+}
+.block-5 {
+	top: calc(700px/5);
+	left: calc(600px/5);
+}
+.block-6 {
+	top: calc(1200px/5);
+}
+
+@keyframes sec1{
+	50%{
+		opacity:0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
