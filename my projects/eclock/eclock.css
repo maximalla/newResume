@@ -7,14 +7,16 @@ body {
 }
 
 .content {
-	margin: 50px;
+	margin-top: 100px;
 	display: flex;
 	justify-content: center;
 }
 
 .eclock {
 	display: flex;
-	
+	background: rgb(74, 220, 227);
+	border: 10px solid rgb(74, 220, 227);
+	border-radius: 50px;
 }
 .time {
 	display: flex;
@@ -22,9 +24,9 @@ body {
 }
 
 .time-spacing0 {
-	width: calc(200px/5);
-	height: calc(1400px/5);
-	background-image: url("/my projects/eclock/time-space0.png");
+	width: calc(200px/10);
+	height: calc(1400px/10);
+	background-image: url("/my projects/eclock/time-space0opac44.png");
 	background-repeat: no-repeat;
   background-size: contain;
 }
@@ -43,19 +45,19 @@ body {
 
 .digit {
 	position: relative;
-	width: calc(800px/5);
+	width: calc(800px/10);
 	display: flex;
 	flex-wrap: wrap;
-	background-image: url("/my projects/eclock/inactive-digit.png");
+	background-image: url("/my projects/eclock/inactive-digit-opac44.png");
 	background-repeat: no-repeat;
   background-size: contain;
 }
 
 .x {
 	position: absolute;
-	left: calc(100px/5);
-	width: calc(600px/5);
-	height: calc(200px/5);
+	left: calc(100px/10);
+	width: calc(600px/10);
+	height: calc(200px/10);
 	background-image: url("/my projects/eclock/blockXb1pxblack.png");
 	background-repeat: no-repeat;
   background-size: contain;
@@ -65,8 +67,8 @@ body {
 
 .y {
 	position: absolute;
-	width: calc(200px/5);
-	height: calc(600px/5);
+	width: calc(200px/10);
+	height: calc(600px/10);
 	background-image: url("/my projects/eclock/blockYb1pxblack.png");
 	background-repeat: no-repeat;
   background-size: contain;
@@ -78,24 +80,24 @@ body {
 	
 }
 .block-1 {
-	top: calc(100px/5);
+	top: calc(100px/10);
 }
 .block-2 {
-	top: calc(100px/5);
-	left: calc(600px/5);
+	top: calc(100px/10);
+	left: calc(600px/10);
 }
 .block-3 {
-	top: calc(600px/5);
+	top: calc(600px/10);
 }
 .block-4 {
-	top: calc(700px/5);
+	top: calc(700px/10);
 }
 .block-5 {
-	top: calc(700px/5);
-	left: calc(600px/5);
+	top: calc(700px/10);
+	left: calc(600px/10);
 }
 .block-6 {
-	top: calc(1200px/5);
+	top: calc(1200px/10);
 }
 
 @keyframes sec1{
