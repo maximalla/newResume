@@ -14,25 +14,25 @@ body {
 
 .clock {
 	position: relative;
-	height: 553px;
-	width: 553px;
+	height: 45vw;
+	width: 45vw;
 	background-image: url("/my projects/clock/background-clock.png");
-	margin-top: 50px;
-	border-radius: 50%;
+	background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hand {
 	position: absolute;
   top: 50%;
+	left: 50%;
 	background-color: black;
 	transform-origin: top;
 	
 }
 
 .second {
-	left: 276px;
-	height: 200px;
-	width: 2px;
+	height: 40%;
+	width: 0.5%;
 	background-color: red;
 	border-radius: 2px;
 	animation-name: time;
@@ -42,9 +42,8 @@ body {
 	
 }
 .minute {
-	left: 275px;
-	height: 150px;
-	width: 4px;
+	height: 30%;
+	width: 1%;
 	border-radius: 4px;
 	animation-name: time;
 	animation-duration: 60s;
@@ -53,9 +52,8 @@ body {
 	
 }
 .hour {
-	left: 274px;
-	height: 110px;
-	width: 6px;
+	height: 23%;
+	width: 1.5%;
 	border-radius: 6px;
 	animation-name: time;
 	animation-duration: 720s;
