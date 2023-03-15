@@ -10,9 +10,9 @@ body {
 }
 
 .space {
-	width: 45%;
 	display: flex;
 	flex-wrap: nowrap;
+	align-items: center;
 }
 
 .clock {
@@ -85,5 +85,24 @@ body {
 
 	to {
 		rotate: 180deg;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.content {
+		flex-wrap:wrap-reverse;
+	}
+
+	.space {
+		height: 90vw;
+	}
+
+	.clock {
+		width: 90vw;
+		height: 90vw;
+	}
+	.eclock {
+		width: 90vw;
+		height: 24.22vw;
 	}
 }

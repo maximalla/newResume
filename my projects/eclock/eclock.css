@@ -17,11 +17,15 @@ body {
 	width: 100%;
 	display: flex;
 	
+	background-color: aqua;
+	border: 10px solid aqua;
+	border-radius: 50px;
 }
 .time {
 	width: 30.769%;
 	display: flex;
 	flex-wrap: nowrap;
+	
 }
 
 .time-spacing0 {
@@ -71,7 +75,6 @@ body {
 	background-image: url("/my projects/eclock/blockXb1pxblack.png");
 	background-repeat: no-repeat;
   background-size: contain;
-
 	animation: sec1 2s steps(1,start) infinite;
 }
 
@@ -87,7 +90,7 @@ body {
 }
 
 .block-0 {
-	
+	opacity: 0;
 }
 .block-1 {
 	top: 7.14%;
@@ -110,7 +113,7 @@ body {
 	top: 85.714%;
 }
 
-@keyframes sec1{
+ @keyframes sec1{
 	50%{
 		opacity:0;
 	}
@@ -119,3 +122,11 @@ body {
 		opacity: 1;
 	}
 }
+
+
+
+
+
+
+
+

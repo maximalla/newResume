@@ -1,40 +1,35 @@
 .eclock {
 	width: 45vw;
 	height: 12.11vw;
-	
 	display: flex;
-
-	
 }
 .time {
+	width: 30.769%;
 	display: flex;
 	flex-wrap: nowrap;
 }
 
 .time-spacing0 {
-	width: 1.73vw;
-	height: 12.11vw;
+	width: 3.846%;
 	background-image: url("/my projects/eclock/time-space0.png");
 	background-repeat: no-repeat;
   background-size: contain;
+	
 }
 
 .time-spacing1 {
 	width: 100%;
-	height: 12.11vw;
+	height: 100%;
 	background-image: url("/my projects/eclock/time-space.png");
 	background-repeat: no-repeat;
   background-size: contain;
-
 
 	animation: sec1 2s steps(1,start) 1s infinite;
 }
 
 .digit {
-	width: 6.923vw;
-	height: 12.11vw;
-
 	position: relative;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	background-image: url("/my projects/eclock/inactive-digit.png");
@@ -43,11 +38,11 @@
 }
 
 .x {
-	width: 5,192vw;
-	height: 1.73vw;
+	width: 75%;
+	height: 14.28%;
 	
 	position: absolute;
-	left: 0.865vw;
+	left: 12.5%;
 	background-image: url("/my projects/eclock/blockXb1pxblack.png");
 	background-repeat: no-repeat;
   background-size: contain;
@@ -56,10 +51,9 @@
 }
 
 .y {
-	width: 1.73vw;
-	height: 5,192vw;
-
 	position: absolute;
+	width: 25%;
+	height: 42.857%;
 	background-image: url("/my projects/eclock/blockYb1pxblack.png");
 	background-repeat: no-repeat;
   background-size: contain;
@@ -68,7 +62,7 @@
 }
 
 .block-0 {
-
+	
 }
 .block-1 {
 	top: 7.14%;
