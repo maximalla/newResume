@@ -92,11 +92,9 @@ body {
 	.content {
 		flex-wrap:wrap-reverse;
 	}
-
 	.space {
 		height: 90vw;
 	}
-
 	.clock {
 		width: 90vw;
 		height: 90vw;
