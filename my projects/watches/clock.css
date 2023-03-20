@@ -1,3 +1,4 @@
+/* main css */
 body {
 	background: rgb(223, 222, 210);
 	margin: 0;
@@ -10,15 +11,20 @@ body {
 }
 
 .space {
+	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
+	justify-content:center;
 }
 
 .clock {
 	position: relative;
-	height: 45vw;
 	width: 45vw;
+	height: 45vw;
+	max-width: 600px;
+	max-height: 600px;
+
 	background-image: url("/my projects/clock/background-clock.png");
 	background-repeat: no-repeat;
   background-size: contain;
@@ -30,7 +36,6 @@ body {
 	left: 50%;
 	background-color: black;
 	transform-origin: top;
-	
 }
 
 .second {
@@ -42,7 +47,6 @@ body {
 	animation-duration: 1s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	
 }
 .minute {
 	height: 30%;
@@ -90,7 +94,7 @@ body {
 
 @media screen and (max-width: 1024px){
 	.content {
-		flex-wrap:wrap-reverse;
+		flex-wrap:wrap;
 	}
 	.space {
 		height: 90vw;
